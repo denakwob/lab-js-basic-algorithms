@@ -13,5 +13,19 @@ if (hacker1.length > hacker2.length) {
     console.log("Wow, you both have equally long names, " + hacker1.length + " characters");
 }
 
-
 // Iteration 3: Loops
+let spacedCapsName = "";
+let reversedName = "";
+
+for (let i = 0; i < hacker1.length; i++){
+    spacedCapsName += (hacker1[i]).toUpperCase() + " ";
+}
+
+for (let i = hacker2.length - 1; i >= 0; i--){
+    reversedName += hacker2[i];
+}
+
+console.log(spacedCapsName);
+console.log(reversedName);
+
+
