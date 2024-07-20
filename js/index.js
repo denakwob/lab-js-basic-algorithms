@@ -33,25 +33,20 @@ if (hacker1 < hacker2){
     console.log("What? You both have the same name?")
 }
 
-// for (let i = 0; i < hacker1.length; i++){
-//     for (let j = 0; j < hacker2.length; j++) {
-        
-//         // convert characters to ascii
-//         let hacker1CharToAscii = hacker1[i].charCodeAt(0);
-//         let hacker2CharToAscii = hacker2[j].charCodeAt(0);
+// Bonus 1
+let loremString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque viverra nulla ac molestie congue. Vivamus mollis sem id convallis vulputate. Fusce ultrices in enim quis varius. Nulla ultricies sollicitudin enim at et egestas. Quisque nulla nisl, pellentesque in felis in, placerat congue nulla. Ut molestie varius risus. Quisque pretium rhoncus tempus. Donec iaculis sodales tempus.Nulla facilisi. Morbi placerat, neque non aliquet placerat, ligula velit malesuada lorem, rutrum hendrerit nisl odio sit amet dui. Proin et eros aliquet, imperdiet lacus eget, imperdiet ex. Sed vestibulum risus sit amet enim aliquam feugiat. Vestibulum eu purus a mi luctus hendrerit. Ut vel sodales quam. Nunc enim massa, pellentesque sed tellus luctus, dictum luctus tellus. Etiam ut arcu eu risus tempor pretium. Nulla vitae condimentum augue, a dapibus augue. Nullam egestas libero sit amet ante sagittis laoreet. Maecenas vel tempor ligula, nec laoreet neque. Pellentesque vehicula consectetur commodo. Nam sed blandit purus, eu efficitur ante. Fusce ullamcorper dui sed facilisis rhoncus.Donec tortor ante, condimentum eget orci tristique, accumsan interdum libero. Nunc at dolor vitae urna congue imperdiet. Praesent id facilisis leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nibh elit, blandit vel efficitur in, efficitur id felis. Mauris lacinia dui quis odio luctus porttitor. Aenean consectetur rutrum tortor, non pretium diam vestibulum quis. Nunc blandit nisl sed lectus viverra imperdiet. Proin varius aliquet mattis. Maecenas lacinia vel nibh eget sollicitudin. Maecenas sodales rutrum purus quis malesuada."
 
-//         // compare values to see which is large or small
-//         if (hacker1CharToAscii < hacker2CharToAscii){
-//             console.log("The driver's name goes first");
-//         } else if (hacker1CharToAscii > hacker2CharToAscii) {
-//             console.log("Yo, the navigator's goes first definitely");
-//         } else {
-//             console.log("What? You both have the same name?");
-//         }
-//         break;
-//     }
-//     break;
-// }
+let words = loremString.split(" ");
+let wordLen = words.length;
+let count = 0;
+
+for (let i = 0; i < wordLen; i++){
+    if (words[i] === 'et'){
+        count += 1;
+    }
+}
+
+console.log(count);
 
 console.log(spacedCapsName);
 console.log(reversedName);
