@@ -25,6 +25,34 @@ for (let i = hacker2.length - 1; i >= 0; i--){
     reversedName += hacker2[i];
 }
 
+if (hacker1 < hacker2){
+    console.log("The driver's name goes first");
+} else if (hacker1 > hacker2) {
+    console.log("Yo, the navigator's goes first definitely");
+} else {
+    console.log("What? You both have the same name?")
+}
+
+// for (let i = 0; i < hacker1.length; i++){
+//     for (let j = 0; j < hacker2.length; j++) {
+        
+//         // convert characters to ascii
+//         let hacker1CharToAscii = hacker1[i].charCodeAt(0);
+//         let hacker2CharToAscii = hacker2[j].charCodeAt(0);
+
+//         // compare values to see which is large or small
+//         if (hacker1CharToAscii < hacker2CharToAscii){
+//             console.log("The driver's name goes first");
+//         } else if (hacker1CharToAscii > hacker2CharToAscii) {
+//             console.log("Yo, the navigator's goes first definitely");
+//         } else {
+//             console.log("What? You both have the same name?");
+//         }
+//         break;
+//     }
+//     break;
+// }
+
 console.log(spacedCapsName);
 console.log(reversedName);
 
